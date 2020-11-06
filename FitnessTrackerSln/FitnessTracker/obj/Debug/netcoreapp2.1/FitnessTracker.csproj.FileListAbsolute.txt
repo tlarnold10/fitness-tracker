@@ -1,0 +1,14 @@
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\bin\Debug\netcoreapp2.1\FitnessTracker.deps.json
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\bin\Debug\netcoreapp2.1\FitnessTracker.runtimeconfig.json
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\bin\Debug\netcoreapp2.1\FitnessTracker.runtimeconfig.dev.json
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\bin\Debug\netcoreapp2.1\FitnessTracker.dll
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\bin\Debug\netcoreapp2.1\FitnessTracker.pdb
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.csprojAssemblyReference.cache
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.csproj.CoreCompileInputs.cache
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.RazorAssemblyInfo.cache
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.RazorAssemblyInfo.cs
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.AssemblyInfoInputs.cache
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.AssemblyInfo.cs
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.RazorTargetAssemblyInfo.cache
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.dll
+C:\Users\TrevorArnold\programming\fitnessTracker\FitnessTrackerSln\FitnessTracker\obj\Debug\netcoreapp2.1\FitnessTracker.pdb
