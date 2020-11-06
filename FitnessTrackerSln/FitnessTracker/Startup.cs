@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,20 +22,21 @@ namespace FitnessTracker
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            // if (env.IsDevelopment())
+            // {
+            //     app.UseDeveloperExceptionPage();
+            // }
+
+            app.UseDeveloperExceptionPage();
+            app.UseStatusCodePages();
+            app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseEndpoints(endpoints => {
+
+            app.UseEndpoints(endpoints =>
+            {
                 endpoints.MapDefaultControllerRoute();
             });
-
-            // app.Run(async (context) =>
-            // {
-            //     await context.Response.WriteAsync("Hello World!");
-            // });
         }
     }
 }
