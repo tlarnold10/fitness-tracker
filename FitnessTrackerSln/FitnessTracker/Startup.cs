@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -30,7 +30,7 @@ namespace FitnessTracker
             services.AddDbContext<FitnessTrackerDbContext>(opts => {
                 opts.UseSqlite(Configuration.GetConnectionString("FitnessTrackerDbContext"));
             });
-            services.AddScoped<IFitnessTrackerRepository>, EFFitnessTrackerRepository(); 
+            services.AddScoped<IFitnessTrackerRepository, EFFitnessTrackerRepository>(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
