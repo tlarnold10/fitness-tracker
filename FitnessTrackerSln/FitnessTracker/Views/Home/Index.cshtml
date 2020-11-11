@@ -1,1 +1,7 @@
-<h4>Welcome to the party</h4>
+@model IQueryable<Workout>
+
+@foreach (var w in Model) {
+    <div>
+        <h3>@w.Lift</h3>
+    </div>
+}

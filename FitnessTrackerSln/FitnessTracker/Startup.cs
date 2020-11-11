@@ -28,7 +28,7 @@ namespace FitnessTracker
         {
             services.AddControllersWithViews();
             services.AddDbContext<FitnessTrackerDbContext>(opts => {
-                opts.UseSqlite(Configuration.GetConnectionString("FitnessTrackerDbContext"));
+                opts.UseSqlite(Configuration.GetConnectionString("FitnessTrackerConnection"));
             });
             services.AddScoped<IFitnessTrackerRepository, EFFitnessTrackerRepository>(); 
         }
@@ -51,6 +51,7 @@ namespace FitnessTracker
             {
                 endpoints.MapDefaultControllerRoute();
             });
+            SeedData.EnsurePopulated(app);
         }
     }
 }
