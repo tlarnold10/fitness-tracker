@@ -33,27 +33,32 @@ namespace FitnessTracker.Models {
                     new Workout {
                         Lift="Lunge",
                         Reps=12,
-                        Weight=80
+                        Weight=80,
+                        WorkoutDate=today
                     },
                     new Workout {
                         Lift="Romanian Deadlift",
                         Reps=10,
-                        Weight=104
+                        Weight=104,
+                        WorkoutDate=today
                     },
                     new Workout {
                         Lift="Calves",
                         Reps=20,
-                        Weight=104
+                        Weight=104,
+                        WorkoutDate=today
                     },
                     new Workout {
                         Lift="Dumbell Front Squat",
                         Reps=16,
-                        Weight=52
+                        Weight=52,
+                        WorkoutDate=today
                     },
                     new Workout {
                         Lift="Dumbell Front Squat",
                         Reps=16,
-                        Weight=52
+                        Weight=52,
+                        WorkoutDate=today
                     }
                 );
                 context.SaveChanges();

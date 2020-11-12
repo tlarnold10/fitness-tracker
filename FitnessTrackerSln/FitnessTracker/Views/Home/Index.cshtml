@@ -2,6 +2,11 @@
 
 @foreach (var w in Model) {
     <div>
-        <h3>@w.Lift</h3>
+        <h3>Lift: @w.Lift</h3>
+        <ul>
+            <li>Reps: @w.Reps</li>
+            <li>Weight: @w.Weight</li>
+            <li>Date: @w.WorkoutDate</li>
+        </ul>
     </div>
 }

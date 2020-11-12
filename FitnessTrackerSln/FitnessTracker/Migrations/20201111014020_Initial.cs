@@ -8,7 +8,7 @@ namespace FitnessTracker.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Workouts",
+                name: "Workout",
                 columns: table => new
                 {
                     WorkoutID = table.Column<long>(nullable: false)
@@ -27,7 +27,7 @@ namespace FitnessTracker.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Workouts");
+                name: "Workout");
         }
     }
 }
