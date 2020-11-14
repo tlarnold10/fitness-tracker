@@ -1,4 +1,5 @@
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace FitnessTracker.Models {
     public class EFFitnessTrackerRepository : IFitnessTrackerRepository {
@@ -9,5 +10,9 @@ namespace FitnessTracker.Models {
         }
 
         public IQueryable<Workout> Workouts => context.Workouts;
+
+        public void Save() {
+            SaveChanges();
+        }
     }
 }

@@ -9,5 +9,11 @@ namespace FitnessTracker.Models {
                 ReadOnly = true, ShowAction = false
             };
         }
+
+        public static WorkoutViewModel Create(Workout workout) {
+            return new WorkoutViewModel {
+                Workout = workout
+            };
+        }
     }
 }

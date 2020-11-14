@@ -17,4 +17,8 @@
         <label asp-for="Workout.Weight"></label>
         <input asp-for="Workout.Weight" readonly/>
     </div>
+    @if (Model.ShowAction) {
+        <button type="submit">@Model.Action</button>
+    }
+    <a asp-action="Index">Back</a>
 </form>
