@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace FitnessTracker.Controllers {
     public class HomeController: Controller {
-        private IFitnessTrackerRepository repository;
+        private FitnessTrackerDbContext repository;
 
-        public HomeController(IFitnessTrackerRepository repo) {
-            repository = repo;
+        public HomeController(FitnessTrackerDbContext context) {
+            repository = context;
         }
 
         public IActionResult Index() => View(repository.Workouts);
@@ -27,8 +27,8 @@ namespace FitnessTracker.Controllers {
         public async Task<IActionResult> Create(Workout workout) {
             if(ModelState.IsValid) {
                 workout.WorkoutID = default;
-                repository.Workouts.Save(workout);
-                await repository.SaveChangeswAsync();
+                repository.Workouts.Add(workout);
+                await repository.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View("WorkoutEditor", ViewModelFactory.Create(workout));

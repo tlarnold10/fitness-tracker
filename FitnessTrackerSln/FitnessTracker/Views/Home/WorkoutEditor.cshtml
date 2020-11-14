@@ -7,15 +7,15 @@
     </div>
     <div>
         <label asp-for="Workout.Lift"></label>
-        <input asp-for="Workout.Lift" readonly/>
+        <input asp-for="Workout.Lift"/>
     </div>
     <div>
         <label asp-for="Workout.Reps"></label>
-        <input asp-for="Workout.Reps" readonly/>
+        <input asp-for="Workout.Reps"/>
     </div>
     <div>
         <label asp-for="Workout.Weight"></label>
-        <input asp-for="Workout.Weight" readonly/>
+        <input asp-for="Workout.Weight"/>
     </div>
     @if (Model.ShowAction) {
         <button type="submit">@Model.Action</button>

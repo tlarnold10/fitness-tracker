@@ -11,8 +11,5 @@ namespace FitnessTracker.Models {
 
         public IQueryable<Workout> Workouts => context.Workouts;
 
-        public void Save() {
-            SaveChanges();
-        }
     }
 }
