@@ -15,5 +15,20 @@ namespace FitnessTracker.Models {
                 Workout = workout
             };
         }
+
+        public static WorkoutViewModel Edit(Workout workout) {
+            return new WorkoutViewModel {
+                Workout = workout,
+                Action = "Edit"
+            };
+        }
+
+        public static WorkoutViewModel Delete(Workout workout) {
+            return new WorkoutViewModel {
+                Workout = workout,
+                Action = "Delete",
+                ReadOnly = true
+            };
+        }
     }
 }

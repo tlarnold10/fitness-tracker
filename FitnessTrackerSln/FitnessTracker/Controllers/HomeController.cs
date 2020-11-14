@@ -33,5 +33,34 @@ namespace FitnessTracker.Controllers {
             }
             return View("WorkoutEditor", ViewModelFactory.Create(workout));
         }
+
+        public async Task<IActionResult> Edit(long id) {
+            Workout w = await repository.Workouts.FindAsync(id);
+            WorkoutViewModel model = ViewModelFactory.Edit(w);
+            return View("WorkoutEditor", model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Workout workout) {
+            if (ModelState.IsValid) {
+                repository.Workouts.Update(workout);
+                await repository.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View("WorkoutEditor", ViewModelFactory.Edit(workout));
+        }
+
+        public async Task<IActionResult> Delete(long id) {
+            Workout w = await repository.Workouts.FindAsync(id);
+            WorkoutViewModel model = ViewModelFactory.Delete(w);
+            return View("WorkoutEditor", model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(Workout workout) {
+            repository.Workouts.Remove(workout);
+            await repository.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
