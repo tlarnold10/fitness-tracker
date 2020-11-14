@@ -1,12 +1,28 @@
 @model IQueryable<Workout>
 
-@foreach (var w in Model) {
-    <div>
-        <h3>Lift: @w.Lift</h3>
-        <ul>
-            <li>Reps: @w.Reps</li>
-            <li>Weight: @w.Weight</li>
-            <li>Date: @w.WorkoutDate</li>
-        </ul>
-    </div>
-}
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Lift</th>
+            <th>Reps</th>
+            <th>Weight</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var w in Model) {
+            <tr>
+                <td>@w.WorkoutID</td>
+                <td>@w.Lift</td>
+                <td>@w.Reps</td>
+                <td>@w.Weight</td>
+                <td>@w.WorkoutDate</td>
+                <td><a asp-action="Details" asp-route-id="@w.WorkoutID">Details</a></td>
+                <td><a asp-action="Edit" asp-route-id="@w.WorkoutID">Edit</a></td>
+                <td><a asp-action="Delete" asp-route-id="@w.WorkoutID">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

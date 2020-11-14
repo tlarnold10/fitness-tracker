@@ -1,0 +1,20 @@
+@model WorkoutViewModel
+
+<form asp-action="@Model.Action" method="post">
+    <div>
+        <label asp-for="Workout.WorkoutID"></label>
+        <input asp-for="Workout.WorkoutID" readonly/>
+    </div>
+    <div>
+        <label asp-for="Workout.Lift"></label>
+        <input asp-for="Workout.Lift" readonly/>
+    </div>
+    <div>
+        <label asp-for="Workout.Reps"></label>
+        <input asp-for="Workout.Reps" readonly/>
+    </div>
+    <div>
+        <label asp-for="Workout.Weight"></label>
+        <input asp-for="Workout.Weight" readonly/>
+    </div>
+</form>

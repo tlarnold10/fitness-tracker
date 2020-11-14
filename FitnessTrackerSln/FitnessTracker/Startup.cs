@@ -49,6 +49,9 @@ namespace FitnessTracker
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllers();
+                endpoints.MapControllerRoute("forms",
+                    "controllers/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapDefaultControllerRoute();
             });
             SeedData.EnsurePopulated(app);
