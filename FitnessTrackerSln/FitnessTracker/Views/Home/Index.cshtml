@@ -1,6 +1,6 @@
 @model IQueryable<Workout>
 
-<table>
+<table class="table table-dark">
     <thead>
         <tr>
             <th>ID</th>
@@ -19,11 +19,14 @@
                 <td>@w.Reps</td>
                 <td>@w.Weight</td>
                 <td>@w.WorkoutDate</td>
-                <td><a asp-action="Details" asp-route-id="@w.WorkoutID">Details</a></td>
-                <td><a asp-action="Edit" asp-route-id="@w.WorkoutID">Edit</a></td>
-                <td><a asp-action="Delete" asp-route-id="@w.WorkoutID">Delete</a></td>
+                <td><a asp-action="Details" asp-route-id="@w.WorkoutID" 
+                         type="button" class="btn btn-primary">Details</a></td>
+                <td><a asp-action="Edit" asp-route-id="@w.WorkoutID"
+                         type="button" class="btn btn-info">Edit</a></td>
+                <td><a asp-action="Delete" asp-route-id="@w.WorkoutID"
+                         type="button" class="btn btn-danger">Delete</a></td>
             </tr>
         }
     </tbody>
 </table>
-<a asp-action="Create">Create</a>
+<a asp-action="Create" class="btn btn-primary">Create</a>
