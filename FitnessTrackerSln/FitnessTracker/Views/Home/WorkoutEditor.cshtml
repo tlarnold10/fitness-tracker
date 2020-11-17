@@ -17,6 +17,10 @@
         <label asp-for="Workout.Weight"></label>
         <input asp-for="Workout.Weight"  class="form-control"/>
     </div>
+    <div class="form-group">
+        <label asp-for="Workout.WorkoutDate"></label>
+        <input asp-for="Workout.WorkoutDate"  class="form-control"/>
+    </div>
     @if (Model.ShowAction) {
         <button type="submit" type="button" class="btn btn-primary">@Model.Action</button>
         <br>
